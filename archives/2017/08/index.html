@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<!-- Use  for dynamic title -->
+		<title>Hexo</title>
+
+		<!-- Twitter bootstrap (via cdn) -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+		<style type="text/css">
+			body {
+				background-color: #ffffff;
+				font-family: 'Roboto', sans-serif;
+				font-size: 16px;
+			}
+
+			#home {
+				height: 400px;
+				width: 100%;
+				background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url('/images/background.jpg') no-repeat center top; /* se utiliza una ruta relativa a razón que el archivo stylel.css esta dentro de la carpeta css para utililzamos la siguiente ruta '../images....' */
+				background-position: center;
+				text-align: center;
+				color: #ffffff;
+			}
+
+			#home p {
+				margin-top: 100px;
+				font-size: 68px;
+			}
+
+			#prueba img {
+				width: 50%;
+				margin-top: 100px;
+			}
+
+			#col-izq ul {
+				margin: 10px 0px;
+			}
+
+			a {
+				color: #63bc50;
+			}
+
+			a:hover {
+				text-decoration: none;
+				color: #151516
+			}
+
+			#col-der ul {
+				list-style-type: none;
+			}
+
+			#pie {
+				padding: 50px 0px;
+				margin-top: 10px;
+				background-color: #ededed;
+			}
+		</style>
+	</head>
+	<body>
+		<section>
+			<div class="home-wrapper" id="home">
+				<div>
+					<div class="container" id="prueba">
+						<img src="images/logo_ab.png">
+					</div>
+				</div>
+			</div>
+		</section>
+		<div>
+			<div class="container">
+    <div class='row'>
+        <div class="col-sm-3 sidenav" id="col-izq">
+            <ul class="nav nav-pills nav-stacked">
+              <li role="presentation"><a href="#">Programacion</a></li>
+              <li role="presentation"><a href="#">Robotica</a></li>
+              <li role="presentation"><a href="#">Mantenimiento</a></li>
+            </ul>
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="Buscar">
+              <span class="input-group-addon glyphicon glyphicon-search" aria-hidden="true"></span>
+            </div>
+        </div>
+        <div class="col-sm-9" id="col-der">
+            <ul class="list-group">
+                
+                    <li class="list-item-group">
+                        <h4><small>Recent post</small></h4>
+                        <hr>
+                        <a href="/my_blog/2017/08/11/hello-world/">
+                            <h2>Hello World</h2>
+                        </a>
+                        <h4><small><span class="glyphicon glyphicon-time"></span> Post by Andrés Burbano, 2017-08-11 </small></h4>
+
+                        
+                    </li>
+                
+                    <li class="list-item-group">
+                        <h4><small>Recent post</small></h4>
+                        <hr>
+                        <a href="/my_blog/2017/08/11/post-2/">
+                            <h2>post 2</h2>
+                        </a>
+                        <h4><small><span class="glyphicon glyphicon-time"></span> Post by Andrés Burbano, 2017-08-11 </small></h4>
+
+                        
+                    </li>
+                
+            </ul>
+            <div  id="comentarios">
+                <hr>
+                <h3>Comentarios</h3>
+                <div class="form-group">
+                    <textarea class="form-control" rows="3"></textarea> 
+                </div>
+                <input type="submit" class="btn btn-success">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+		</div>
+		<footer class="container-fluid text-center" id="pie">
+			<h4>© 2017 Andrés Felipe Burbano, Todos los Derechos Reservados</h3>
+		</footer>
+	</body>
+</html>
